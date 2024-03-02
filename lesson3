@@ -1,0 +1,199 @@
+//// Задание 1. Приложение по определению чётного или нечётного числа
+
+//Console.WriteLine("Введите число: ");
+//int number = int.Parse(Console.ReadLine());
+
+//if (number % 2 == 0)
+//{
+//    Console.WriteLine("Число четное");
+//    Console.ReadKey();
+//}
+
+//else if (number % 2 != 0)
+//{
+//    Console.WriteLine("Число нечетное");
+//    Console.ReadKey();
+//}
+
+
+
+//// Задание 2. Программа подсчёта суммы карт в игре «21»
+//string cardDenomination;
+//int amount = 0;
+
+//Console.WriteLine("Приветсвую! Добро пожаловать в игру 21!\nГотовы начать?\nY/N");
+
+
+
+//while (true)
+//{
+//    string areYouReady = Console.ReadLine();
+//    if (areYouReady == "Y")
+//    {
+//        Console.WriteLine("Сколько у вас карт на руках?");
+//        break;
+
+//    }
+
+//    else if (areYouReady == "y")
+//    {
+//        Console.WriteLine("Сколько у вас карт на руках?");
+//        break;
+
+//    }
+
+//    else if (areYouReady == "N")
+//    {
+//        Console.WriteLine("Будем вас ждать, когда вы будете готовы играть!");
+//        Console.ReadKey();
+//        Environment.Exit(0);
+//        break;
+//    }
+
+//    else if (areYouReady == "n")
+//    {
+//        Console.WriteLine("Будем вас ждать, когда вы будете готовы играть!");
+//        Console.ReadKey();
+//        Environment.Exit(0);
+//        break;
+//    }
+
+//    else
+//    {
+//        Console.WriteLine("Введено некоректное значение, введите Y/N");
+//    }
+
+
+//}
+
+//int number = int.Parse(Console.ReadLine());
+//for (int n = 1; n <= number; n++)
+//{
+//    Console.WriteLine("Введите номинал " + n + " карты: ");
+//    cardDenomination = Console.ReadLine();
+//    switch (cardDenomination)
+//    {
+//        case "6":
+//            amount += 6;
+//            break;
+//        case "7":
+//            amount += 7;
+//            break;
+//        case "8":
+//            amount += 8;
+//            break;
+//        case "9":
+//            amount += 9;
+//            break;
+//        case "10":
+//            amount += 10;
+//            break;
+//        case "J":
+//            amount += 10;
+//            break;
+//        case "Q":
+//            amount += 10;
+//            break;
+//        case "K":
+//            amount += 10;
+//            break;
+//        case "T":
+//            amount += 10;
+//            break;
+//    }
+//}
+//Console.WriteLine("Вес ваших карт: " + amount);
+//Console.ReadKey();
+
+
+
+////Задание 3. Проверка простого числа
+//bool isPrime = true;
+//Console.WriteLine("Введите число для проверки: ");
+//int number = Convert.ToInt32(Console.ReadLine());
+
+//if (number < 2)
+//{
+//    Console.WriteLine("Число не является натуральным");
+//}
+//else
+//{
+//    for (int i = 2; i < number; i++)
+//    {
+//        if (number % i == 0)
+//        {
+//            isPrime = false;
+//            break;
+//        }
+//    }
+
+//    if (isPrime)
+//    {
+//        Console.WriteLine("Число является простым");
+//    }
+//    else
+//    {
+//        Console.WriteLine("Число не является простым");
+//    }
+//}
+
+//Console.ReadKey();
+
+
+////Задание 4. Наименьший элемент в последовательности
+//int number = int.MaxValue;
+//Console.WriteLine("Введите длину последовательности");
+//int Lenght = int.Parse(Console.ReadLine());
+
+//Console.WriteLine($"Введите {Lenght} чисел");
+//for (int i = 0; i < Lenght; i++)
+//{
+//    int a = int.Parse(Console.ReadLine());
+//    if (a < number)
+//    {
+//        number = a;
+//    }
+
+//}
+//Console.WriteLine($"Наименьшее число теперь {number}");
+//Console.ReadKey();
+
+
+////Задание 5. Игра «Угадай число»
+//Console.WriteLine("Введите максимальное допустимое значение диапозона: ");
+//int MaxValue = int.Parse(Console.ReadLine());
+
+//Random rnd = new Random();
+//int guessNumber = rnd.Next(0, MaxValue);
+
+//while (true)
+//{
+//    Console.WriteLine("Введите число");
+
+//    string number = Console.ReadLine();
+
+//    if (number == "")
+//    {
+//        Console.WriteLine($"Будем ждать вас снова! Загаднное число было: {guessNumber}");
+//        Console.ReadKey();
+//        break;
+//    }
+
+//    if (guessNumber > int.Parse(number))
+//    {
+//        Console.WriteLine($"Загаданное число, больше чем {number} ");
+//    }
+//    else if (guessNumber < int.Parse(number))
+//    {
+//        Console.WriteLine($"Загаданное число, меньше чем {number}");
+//    }
+//    else if (guessNumber == int.Parse(number))
+//    {
+//        Console.WriteLine("Поздравляю, вы победили!");
+//        Console.ReadKey();
+//        break;
+//    }
+
+
+
+//}
